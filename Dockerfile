@@ -1,5 +1,5 @@
-FROM ubuntu:18.04
-RUN apt-get update && apt-get install libuv1 -y
+FROM jeanblanchard/alpine-glibc:latest
+RUN apk add --update libuv libstdc++ && rm -rf /var/cache/apk/*
 COPY snell-server /usr/bin/snell-server
 COPY start.sh /start.sh
 
