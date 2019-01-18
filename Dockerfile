@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM bitnami/minideb:stretch
 RUN apt-get update && apt-get install libuv1 -y
 COPY snell-server /usr/bin/snell-server
 COPY start.sh /start.sh
