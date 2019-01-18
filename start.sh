@@ -1,4 +1,4 @@
-#!/bin/ash
+#!/usr/bin/env bash
 
 # docker run -e PSK=<your_psk_here> -p<your_host_port_here>:9102 --restart unless-stopped -d snell-server:latest
 
