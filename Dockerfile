@@ -5,7 +5,7 @@ WORKDIR /tmp
 ENV SNELL_VERSION="1.0.0"
 RUN wget https://github.com/surge-networks/snell/releases/download/1.0/snell-server-v${SNELL_VERSION}-linux-amd64.zip && \
     unzip snell-server-v${SNELL_VERSION}-linux-amd64.zip && \
-    mv snell-server /usr/bin/
+    mv snell-server /usr/bin/ && rm snell-server-v${SNELL_VERSION}-linux-amd64.zip
 
 ENV TZ=Asia/Shanghai
 
