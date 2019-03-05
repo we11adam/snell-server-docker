@@ -1,6 +1,6 @@
 FROM jeanblanchard/alpine-glibc:latest
 
-ENV SNELL_VERSION="1.0.1"
+ENV SNELL_VERSION="1.1.0"
 ENV TZ=Asia/Shanghai
 
 WORKDIR /tmp
