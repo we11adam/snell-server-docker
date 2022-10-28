@@ -25,6 +25,5 @@ if [ -f ${CONF} ]; then
     echo "[snell-server]" >> ${CONF}
     echo "listen = 0.0.0.0:9102" >> ${CONF}
     echo "psk = ${PSK}" >> ${CONF}
-    echo "obfs = http" >> ${CONF}
     run_bin
 fi
